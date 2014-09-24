@@ -263,6 +263,7 @@ func (cmd *vmdk) CopyVirtualCenter(i importable, s progress.Sinker) error {
 	if err != nil {
 		return err
 	}
+	
 
 	err = cmd.DestroyVM(src)
 	if err != nil {
